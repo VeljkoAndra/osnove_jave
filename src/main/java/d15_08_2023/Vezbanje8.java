@@ -24,6 +24,8 @@ public class Vezbanje8 {
 
         String name= "Cunami - Ne Pitaj";
         int duration = 173;
+        int min = duration / 60;
+        int sec= duration - min * 60;
         int framePerSec= 25;
         int length= 1080, height = 720;
 
@@ -36,7 +38,7 @@ public class Vezbanje8 {
 
 
         System.out.println(name);
-        System.out.println("2:53  <||||");
+        System.out.println(min + ":" + sec + "<||||");
         System.out.println("Numbers of frames per second: " + framePerSec);
         System.out.println("Resolution: " + length + "x" + height);
         System.out.println("Minimal network speed: " + frameNet + "Mb/s");
