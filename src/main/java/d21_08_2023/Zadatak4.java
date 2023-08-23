@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Zadatak4 {
     public static void main(String[] args) {
-        //4.	Napisati program koji vodi evidenciju koliko je uneto sledecih reakcija. Korisnik unosi N rekacija zatim se prikazuje evidencija:
+        //1.	Napisati program koji vodi evidenciju koliko je uneto sledecih reakcija. Korisnik unosi N rekacija zatim se prikazuje evidencija:
         //Program podrzava sledece reakcije:
         //●	like
         //●	smile
@@ -29,27 +29,19 @@ public class Zadatak4 {
         System.out.print("Unesite broj N: ");
         int N = s.nextInt();
 
-        int likeCounter = 0;
-        int heartCounter = 0;
-        int smileCounter = 0;
-        for (int i = 0; i < N; i++) {
-            System.out.println("Reaguj: ");
-            String r = s.next();
-            if (r.equals("like")) {
-                likeCounter++;
-            } else if (r.equals("smile")) {
-smileCounter++;
-            } else if (r.equals("heart")) {
-                heartCounter++;
-            }
+        int counterHeart = 0;
+        int counterSmile = 0;
+        int counterLike = 0;
 
-        }
-        System.out.println("Summary: " + "like: " + likeCounter + " | "+ "smile: "+smileCounter +" | "+ "heart: "+ heartCounter);
+   for (int i =0; i< N; i++) {
+       System.out.print("Reaguj: ");
+       String r = s.next();
 
+       if (r.equals("like")) {counterLike++;
+   } else if (r.equals("smile")) {counterSmile++;} else if (r.equals("heart")) {
+           counterHeart++;
+       }}
+       System.out.println("Summary: "+ "like "+ counterLike+ " | "+"smile "+counterSmile+" | "+ "heart "+counterHeart);
 
-
-
-
-
-    }
+   }
 }
